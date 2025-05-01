@@ -1,0 +1,21 @@
+{
+  "recipe": [
+    {
+      "id": 1,
+      "title": "JSON-Server",
+      "author": "Amit",
+      "img" :"httkkf"
+    },
+    {
+      "id": 2,
+      "title": "Node.js",
+      "author": "Mohit"
+    },
+    {
+      "id" : 3,
+      "name" : "amine",
+      "age": 22
+    }
+  ]
+}
+

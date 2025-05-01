@@ -9,6 +9,8 @@ import { RecipeListComponent } from './recipe-list/recipe-list.component';
 import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
 import { LoginComponent } from './login/login.component';
 import { RatingSystemComponent } from './rating-system/rating-system.component';
+import { FormRecipeComponent } from './form-recipe/form-recipe.component';
+import { HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,14 @@ import { RatingSystemComponent } from './rating-system/rating-system.component';
     RecipeListComponent,
     RecipeDetailComponent,
     LoginComponent,
-    RatingSystemComponent
+    RatingSystemComponent,
+    FormRecipeComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [
 
