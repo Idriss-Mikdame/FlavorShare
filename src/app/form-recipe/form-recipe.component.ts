@@ -14,7 +14,8 @@ export class FormRecipeComponent implements OnInit{
     ingredients : '',
     etapes : '',
     img : '',
-    categorie : ''
+    categorie : '',
+    data : new Date()
   }
 
 

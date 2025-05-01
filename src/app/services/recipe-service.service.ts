@@ -22,7 +22,7 @@ export class RecipeServiceService {
     return this.http.get(`${this.url}/${id}`)
   }
 
-  supprimerRecipe(id:string):Observable<any>{
-    return this.http.get(`${this.url}/${id}`)
+  supprimerRecipe(id:any):Observable<any>{
+    return this.http.delete(`${this.url}/${id}`)
   }
 }

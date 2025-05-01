@@ -24,4 +24,15 @@ export class RecipeListComponent implements OnInit{
       console.log(Recipe)
     })
   }
+  deleteRecipe(id:string){
+    console.log("ok")
+    let conf = confirm("'Voulez-vous le supprimer Article?")
+    if (conf){
+      this.RecipeServices.supprimerRecipe(id).subscribe(supprime=>{
+        if (supprime){
+          this.getRecipes()
+        }
+      })
+    }
+  }
 }
