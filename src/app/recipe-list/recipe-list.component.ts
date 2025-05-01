@@ -9,7 +9,7 @@ import {RecipeServiceService} from '../services/recipe-service.service';
 })
 export class RecipeListComponent implements OnInit{
   recipesList:any[] = []
-
+  selectionParcategorie = ''
 
   constructor(private RecipeServices:RecipeServiceService) {
   }

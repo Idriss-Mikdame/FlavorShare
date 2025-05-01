@@ -18,7 +18,7 @@ export class RecipeServiceService {
     return this.http.post<any>("http://localhost:3000/recipe",posteDonne)
   }
 
-  ajouterrecipeParid(id:string):Observable<any>{
+  afichererrecipeParid(id:string):Observable<any>{
     return this.http.get(`${this.url}/${id}`)
   }
 
