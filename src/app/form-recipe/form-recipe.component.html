@@ -1,1 +1,33 @@
-test form
+
+<div class="container">
+  <div class="form-control">
+      <h1>Ajouter un Recete</h1>
+    <form (ngSubmit)="ajouterRecipe()">
+      <div class="mb-3">
+        <label class="form-label" >Nom la recette :</label><br>
+        <input [(ngModel)]="recipe.nom" class="form-control" type="text"  name="nom" >
+      </div>
+
+     <div class="mb-3">
+       <label class="form-label">ingredients :</label><br>
+       <input [(ngModel)]="recipe.ingredients" class="form-control" type="text"  name="ingredients" >
+     </div>
+
+      <div class="mb-3">
+        <label class="form-label">les Etapes :</label><br>
+        <input [(ngModel)]="recipe.etapes" class="form-control"   type="text"  name="etapes" >
+      </div>
+
+      <div>
+        <label class="form-label">un image :</label><br>
+        <input  [(ngModel)]="recipe.img" class="form-control" type="text"  name="img" >
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label" >les categorie :</label><br>
+        <input [(ngModel)]="recipe.categorie" class="form-control"   type="text"  name="categorie" >
+      </div>
+      <input  class="form-control-lg btn btn-outline-danger" type="submit" value="Ajouter">
+    </form>
+  </div>
+</div>

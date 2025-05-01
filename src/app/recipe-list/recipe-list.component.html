@@ -1,1 +1,13 @@
-<p>recipe-list works!</p>
+<div class="container">
+  <div class="d-flex justify-content-between">
+    <div class="card " style="width: 18rem;" *ngFor="let recipes of recipesList">
+      <img class="card-img-top" src="{{recipes.img}}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{recipes.nom}}</h5>
+        <p class="card-text">{{recipes.ingredients}}</p>
+        <p>{{recipes.etapes}}</p>
+        <p><b>Ctegory : </b> <span>{{recipes.categorie}}</span></p>
+      </div>
+    </div>
+  </div>
+</div>

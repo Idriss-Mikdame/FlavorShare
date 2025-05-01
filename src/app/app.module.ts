@@ -11,6 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { RatingSystemComponent } from './rating-system/rating-system.component';
 import { FormRecipeComponent } from './form-recipe/form-recipe.component';
 import { HttpClientModule} from '@angular/common/http';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { HttpClientModule} from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
 

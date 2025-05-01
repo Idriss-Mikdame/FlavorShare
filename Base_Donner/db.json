@@ -2,20 +2,43 @@
   "recipe": [
     {
       "id": 1,
-      "title": "JSON-Server",
-      "author": "Amit",
-      "img" :"httkkf"
+      "nom": "pizza",
+      "ingredients": "200 g de mozzarella râpée ou en tranches\n\nChampignons de Paris émincés\n\nJambon ou pepperoni\n\nOlives noires\n\nPoivrons en lamelles\n\nOignons émincés",
+      "etapes": "eatp1-etap2-etape3-etape4-etape6",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXTj0MXfYZRL_8l8nOi4XzOI7iX5jUsHRNhw&s",
+      "categorie": "italiane"
     },
     {
       "id": 2,
-      "title": "Node.js",
-      "author": "Mohit"
+      "nom": "Chicken Curry",
+      "ingredients": "500 g de blanc de poulet (ou cuisses désossées), coupé en morceaux\n\n2 oignons moyens, émincés\n\n2 gousses d’ail, hachées\n\n1 morceau de gingembre frais (2 cm), râpé\n\n",
+      "etapes": "eatp1-etap2-etape3-etape4-etape6",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_S6UXUpqML7jn0aD8wpAOKEmS6Dsu8QkeYw&s",
+      "categorie": "India"
     },
     {
-      "id" : 3,
-      "name" : "amine",
-      "age": 22
+      "id": 3,
+      "nom": "Tajin",
+      "ingredients": "1 poulet entier découpé ou 4 à 6 morceaux de poulet (cuisses ou pilons)\n\n2 oignons moyens, émincés\n\n2 à 3 carottes, coupées en bâtonnets\n\n2 pommes de terre, coupées en quartiers\n\n2 courgettes, coupées en gros morceaux\n\n1 tomate, en rondelles (ou râpée pour la sauce)\n\n2 gousses d’ail, hachées",
+      "etapes": "eatp1-etap2-etape3-etape4-etape6",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJwjKYeFaSRlSCLCsIA8sSfsrVrKHUhGaIOw&s",
+      "categorie": "Marocain"
+    },
+    {
+      "id": "a282",
+      "nom": "les aptes Ou sauce à la crèm",
+      "ingredients": "20 cl de crème fraîche  100 g de lardons ou jambon en dés (optionnel)  Champignons de Paris émincés (optionnel)  1 oignon  Poivre noir, noix de muscade (facultatif)  Fromage râpé (parmesan, gruyère)",
+      "etapes": "eatp1-etap2-etape3-etape4-etape6",
+      "img": "https://th.bing.com/th/id/OIP.jVNxmBjaebL7-CTfE9vkxQHaFD?pid=ImgDet&w=178&h=122&c=7&dpr=1.5",
+      "categorie": "italiano "
+    },
+    {
+      "id": "ff2a",
+      "nom": "les aptes Ou sauce à la crèm",
+      "ingredients": "20 cl de crème fraîche  100 g de lardons ou jambon en dés (optionnel)  Champignons de Paris émincés (optionnel)  1 oignon  Poivre noir, noix de muscade (facultatif)  Fromage râpé (parmesan, gruyère)",
+      "etapes": "eatp1-etap2-etape3-etape4-etape6",
+      "img": "https://th.bing.com/th/id/OIP.jVNxmBjaebL7-CTfE9vkxQHaFD?pid=ImgDet&w=178&h=122&c=7&dpr=1.5",
+      "categorie": "italiano "
     }
   ]
 }
-

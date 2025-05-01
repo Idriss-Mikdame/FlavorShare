@@ -14,7 +14,7 @@ export class RecipeServiceService {
     return this.http.get<any>(this.url)
   }
 
-  ajouterDonnee(posteDonne:string):Observable<any>{
+  ajouteRec(posteDonne:any):Observable<any>{
     return this.http.post<any>("http://localhost:3000/recipe",posteDonne)
   }
 
