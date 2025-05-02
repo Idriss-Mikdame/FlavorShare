@@ -23,6 +23,7 @@ export class RecipeDetailComponent implements OnInit {
     if (this.recipeID) {
       this.recipeService.afichererrecipeParid(this.recipeID).subscribe((data) => {
         this.recipeDetails = data;
+        console.log(data)
       });
     }
   }

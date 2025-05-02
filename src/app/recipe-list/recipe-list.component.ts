@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {Router} from '@angular/router';
 import {RecipeServiceService} from '../services/recipe-service.service';
 
 @Component({
@@ -14,7 +13,9 @@ export class RecipeListComponent implements OnInit{
 
 
 
-  constructor(private RecipeServices:RecipeServiceService) {
+
+  constructor(private RecipeServices:RecipeServiceService,
+             ) {
   }
   ngOnInit(): void {
     this.getRecipes()
@@ -27,6 +28,12 @@ export class RecipeListComponent implements OnInit{
       console.log(Recipe)
     })
   }
+
+
+
+
+
+
   deleteRecipe(id:string){
     console.log("ok")
     let conf = confirm("'Voulez-vous le supprimer Article?")

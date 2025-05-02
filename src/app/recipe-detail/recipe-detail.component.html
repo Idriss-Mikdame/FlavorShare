@@ -1,26 +1,31 @@
-<p>recipe-detail works!</p>
-
-<div class="posts-grid">
-  <article class="post-card" >
-
-    <img [src]="recipeDetails.img">
-
-    <div class="post-content">
-      <h2 class="post-title"> {{recipeDetails.nom}}</h2>
-      <div class="post-meta">
-        <span>{{recipeDetails.ingredients}}</span>
+<div class="container py-4">
+  <div class="recipe-card">
+    <div class="row g-0">
+      <!-- Image Column (Left on desktop, Top on mobile) -->
+      <div class="col-md-5">
+        <div class="image-container">
+          <img [src]="recipeDetails.img" alt="{{recipeDetails.nom}}" class="recipe-image">
+        </div>
       </div>
-      <p class="post-excerpt">
-        {{recipeDetails.etapes}}
-      </p>
-      <div>
-        <span class="tag">{{recipeDetails.categorie}}</span>
+
+      <!-- Content Column (Right on desktop, Bottom on mobile) -->
+      <div class="col-md-7 p-4">
+        <h1 class="recipe-title">{{recipeDetails.nom}}</h1>
+
+        <p class="recipe-description">
+          {{recipeDetails.ingredients}}
+        </p>
+
+        <h2 class="section-title">LES ÉTAPES</h2>
+        <p class="steps-list">
+          {{recipeDetails.etapes}}
+        </p>
+
+        <h2 class="section-title">CATÉGORIE</h2>
+        <div class="text-center">
+          <span class="category-badge">{{recipeDetails.categorie}}</span>
+        </div>
       </div>
-    <div>
-      <p><b>Date : </b>{{recipeDetails.data}}</p>
     </div>
-    </div>
-
-  </article>
-
+  </div>
 </div>

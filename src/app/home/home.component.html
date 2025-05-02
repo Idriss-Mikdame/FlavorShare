@@ -1,0 +1,22 @@
+<div class="back">
+  <div class="container">
+    <!-- Header Section -->
+    <header class="header-section">
+      <h1 class="main-title">HELLO FRESH</h1>
+      <h2 class="subtitle">LE BOX à Cuisiner</h2>
+      <h3 class="location">Développée en Beni Mellal</h3>
+      <p class="description">Recettes simples et délicieuses</p>
+
+      <button (click)="afficherlistrecipe()" class="btn recipe-btn">RECIPE-LIST</button>
+    </header>
+
+    <!-- Recipe Cards Section -->
+    <div class="row justify-content-center">
+      <div class="col-md-4 col-sm-6 recipe-card" *ngFor="let recipe of recipesList | slice:0:3">
+        <img [src]="recipe.img" alt="Recette" class="recipe-img img-fluid rounded shadow">
+        <button [routerLink]="['/recipe-detail',recipe.id]" class="btn show-btn mt-2">Afficher</button>
+      </div>
+    </div>
+  </div>
+
+</div>
