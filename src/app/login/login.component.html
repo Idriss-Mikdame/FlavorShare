@@ -1,1 +1,24 @@
-<p>login works!</p>
+<div class="container container mt-4">
+  <div class="col-md-6 offset-3">
+      <div class="card">
+          <div class="card-header">Authentication</div>
+          <div class="ms-2 text-danger" *ngIf="errorMessage">{{errorMessage}}</div>
+          <div class="card-body">
+            {{userFormGroup.value | json}}
+            <form [formGroup]="userFormGroup" (ngSubmit)="handelLogin()">
+                <div class="mb-3">
+                  <label class="form-label">Nom :</label>
+                  <input type="text" formControlName="username" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Mdp :</label>
+                  <input class="form-control" formControlName="password" type="password">
+                </div>
+              <button class="btn btn-warning" type="submit">Login</button>
+
+            </form>
+          </div>
+      </div>
+  </div>
+</div>

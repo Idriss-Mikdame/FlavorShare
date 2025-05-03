@@ -11,7 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { RatingSystemComponent } from './rating-system/rating-system.component';
 import { FormRecipeComponent } from './form-recipe/form-recipe.component';
 import { HttpClientModule} from '@angular/common/http';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {CommonModule} from '@angular/common';
 
 @NgModule({
@@ -27,11 +27,13 @@ import {CommonModule} from '@angular/common';
 
   ],
   imports: [
+
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    CommonModule
+    CommonModule,
+    ReactiveFormsModule
   ],
   providers: [
 

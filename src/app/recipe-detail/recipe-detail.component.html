@@ -1,31 +1,34 @@
-<div class="container py-4">
-  <div class="recipe-card">
-    <div class="row g-0">
-      <!-- Image Column (Left on desktop, Top on mobile) -->
-      <div class="col-md-5">
-        <div class="image-container">
-          <img [src]="recipeDetails.img" alt="{{recipeDetails.nom}}" class="recipe-image">
+<div class="back">
+  <div class="container py-4">
+    <div class="recipe-card">
+      <div class="row g-0">
+        <!-- Image Column (Left on desktop, Top on mobile) -->
+        <div class="col-md-5">
+          <div class="image-container">
+            <img [src]="recipeDetails.img" alt="{{recipeDetails.nom}}" class="recipe-image">
+          </div>
         </div>
-      </div>
 
-      <!-- Content Column (Right on desktop, Bottom on mobile) -->
-      <div class="col-md-7 p-4">
-        <h1 class="recipe-title">{{recipeDetails.nom}}</h1>
+        <!-- Content Column (Right on desktop, Bottom on mobile) -->
+        <div class="col-md-7 p-4">
+          <h1 class="recipe-title">{{recipeDetails.nom}}</h1>
 
-        <p class="recipe-description">
-          {{recipeDetails.ingredients}}
-        </p>
+          <p class="recipe-description">
+            {{recipeDetails.ingredients}}
+          </p>
 
-        <h2 class="section-title">LES ÉTAPES</h2>
-        <p class="steps-list">
-          {{recipeDetails.etapes}}
-        </p>
+          <h2 class="section-title">LES ÉTAPES</h2>
+          <p class="steps-list">
+            {{recipeDetails.etapes}}
+          </p>
 
-        <h2 class="section-title">CATÉGORIE</h2>
-        <div class="text-center">
-          <span class="category-badge">{{recipeDetails.categorie}}</span>
+          <h2 class="section-title">CATÉGORIE</h2>
+          <div class="text-center">
+            <span class="category-badge">{{recipeDetails.categorie}}</span>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
 </div>
