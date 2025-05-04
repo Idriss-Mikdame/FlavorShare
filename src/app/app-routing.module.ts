@@ -9,6 +9,7 @@ import {RatingSystemComponent} from './rating-system/rating-system.component';
 import {RecipeDetailComponent} from './recipe-detail/recipe-detail.component';
 import {NavbarComponent} from './navbar/navbar.component';
 import {AuthenticationGuard} from './guards/authentication.guard';
+import {EditFormComponent} from './edit-form/edit-form.component';
 
 const routes: Routes = [
   {path : "", component : LoginComponent},
@@ -20,6 +21,7 @@ const routes: Routes = [
       {path : "recipe-list", component : RecipeListComponent},
       {path : "recipe-detail/:id",component:RecipeDetailComponent},
       {path : "rating", component : RatingSystemComponent},
+      {path : "edit-form/:id", component : EditFormComponent},
     ]},
 
 ];

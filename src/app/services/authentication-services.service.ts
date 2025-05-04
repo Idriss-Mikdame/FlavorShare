@@ -35,4 +35,9 @@ export class AuthenticationServicesService {
   public  isAhthenticated(){
     return this.authenticatedUser!=undefined
   }
+  public logout():Observable<boolean>{
+      this.authenticatedUser = undefined
+      localStorage.removeItem("AuthUser")
+    return of(true)
+  }
 }

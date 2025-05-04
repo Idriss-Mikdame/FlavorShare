@@ -36,7 +36,7 @@ export class FormRecipeComponent implements OnInit{
     this.RecipeServices.ajouteRec(this.recipe).subscribe(recipAdd=>{
       this.recipesList = recipAdd
       if (recipAdd){
-        this.router.navigateByUrl('/recipe-list')
+        this.router.navigateByUrl('/admin/recipe-list')
       }
     })
   }

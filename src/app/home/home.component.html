@@ -11,7 +11,7 @@
 
     <div class="row justify-content-center">
       <div class="col-md-3 col-sm-6 recipe-card" *ngFor="let recipe of recipesList | slice:0:3">
-        <a [routerLink]="['/recipe-detail',recipe.id]" ><img [src]="recipe.img" alt="Recette" class="recipe-img img-fluid rounded shadow"></a>
+        <a [routerLink]="['/admin/recipe-detail',recipe.id]" ><img [src]="recipe.img" alt="Recette" class="recipe-img img-fluid rounded shadow"></a>
       </div>
     </div>
   </div>

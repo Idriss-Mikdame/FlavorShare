@@ -25,4 +25,7 @@ export class RecipeServiceService {
   supprimerRecipe(id:any):Observable<any>{
     return this.http.delete(`${this.url}/${id}`)
   }
+  editArticle(edittData : any):Observable<any>{
+    return this.http.put("http://localhost:3000/recipe/"+ edittData.id,edittData)
+  }
 }

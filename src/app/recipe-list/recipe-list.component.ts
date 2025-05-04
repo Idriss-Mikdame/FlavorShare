@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {RecipeServiceService} from '../services/recipe-service.service';
+import {AuthenticationServicesService} from '../services/authentication-services.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-recipe-list',
@@ -14,7 +16,8 @@ export class RecipeListComponent implements OnInit{
 
 
 
-  constructor(private RecipeServices:RecipeServiceService,
+  constructor(private RecipeServices:RecipeServiceService,public AuthServices:AuthenticationServicesService
+              ,private route:Router
              ) {
   }
   ngOnInit(): void {
@@ -44,5 +47,9 @@ export class RecipeListComponent implements OnInit{
         }
       })
     }
+  }
+  onEditArticle() {
+
+
   }
 }

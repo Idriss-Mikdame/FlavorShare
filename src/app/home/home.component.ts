@@ -31,6 +31,6 @@ export class HomeComponent implements OnInit{
   }
 
   afficherlistrecipe() {
-    this.route.navigateByUrl('/recipe-list')
+    this.route.navigateByUrl('/admin/recipe-list')
   }
 }

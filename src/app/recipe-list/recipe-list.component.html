@@ -20,9 +20,10 @@
           <p><b>Catégorie :</b> <span>{{ recipes.categorie }}</span></p>
           <p><b>Date :</b> {{ recipes.data | date}}</p>
           <div class="mt-auto d-flex justify-content-between">
-            <button (click)="deleteRecipe(recipes.id)" class="btn btn-danger">
+            <button *ngIf="AuthServices.hasRole('ADMIN')" (click)="deleteRecipe(recipes.id)" class="btn btn-danger">
               <i class="bi bi-trash3"></i>
             </button>
+            <button *ngIf="AuthServices.hasRole('ADMIN')" (click)="deleteRecipe(recipes.id)" [routerLink]="['/admin/edit-form',recipes.id]" class="btn btn-warning"><i class="bi bi-pencil"></i></button>
             <button [routerLink]="['/admin/recipe-detail',recipes.id]" class="btn btn-primary">
               <i class="bi bi-arrow-right"></i>
             </button>
